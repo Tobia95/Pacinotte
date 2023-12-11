@@ -1,5 +1,5 @@
 package pacinotte1;
-
+//EASTER EGG
 import java.awt.*;
 import static java.lang.Math.random;
 import java.util.Random;
