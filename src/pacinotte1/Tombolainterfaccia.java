@@ -2,6 +2,7 @@ package pacinotte1;
 //EASTER EGG
 import java.awt.*;
 import static java.lang.Math.random;
+import java.util.Locale;
 import java.util.Random;
 import javax.swing.*;
 
@@ -18,7 +19,6 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     JPanel []panels1 = new JPanel[91];
     JLabel []labels2 = new JLabel[61];
     
-    
     double ran;
     double arrayran[]= new double[61];
     String arraystrin[] = new String [61];
@@ -27,10 +27,12 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
    GraphicsDevice gd = ge.getDefaultScreenDevice();
    
+   Tombola nuovoTombola = new Tombola(this,true);
    
     public Tombolainterfaccia() {
         initComponents();
        
+                
         fullscreenoff.setVisible(false);
         // INIZIALIZZAZIONE ARRAY tabellone
         
@@ -6530,7 +6532,9 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             {
                 if(c==15)
                 {
-                    JOptionPane.showMessageDialog(null, "WOWW (tombola)");
+                nuovoTombola.setLocationRelativeTo(null);
+                nuovoTombola.tomb1.setText("La scuola di hogwarts ha fatto tombola!");
+                nuovoTombola.setVisible(true);
                 }
                     
                 c=0;
@@ -6773,7 +6777,9 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             
             if(c==15)
             {
-                JOptionPane.showMessageDialog(null, "1 WOWW (tombola)");
+                nuovoTombola.setLocationRelativeTo(null);
+                nuovoTombola.setVisible(true);
+                nuovoTombola.tomb1.setText("Grifindoro ha fatto tombola!");
             }
         }
         
@@ -6786,7 +6792,10 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             
             if(c==15)
             {
-                JOptionPane.showMessageDialog(null, "2 WOWW (tombola)");
+                nuovoTombola.setLocationRelativeTo(null);
+                nuovoTombola.tomb1.setText("Serpeverde ha fatto tombola!");
+                nuovoTombola.setVisible(true);
+                
             }
         }
         
@@ -6799,7 +6808,10 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             
             if(c==15)
             {
-                JOptionPane.showMessageDialog(null, "3 WOWW (tombola)");
+                nuovoTombola.setLocationRelativeTo(null);
+                nuovoTombola.tomb1.setText("Tassorosso ha fatto tombola!");
+                nuovoTombola.setVisible(true);
+                
             }
         }
         
@@ -6812,7 +6824,11 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             
             if(c==15)
             {
-                JOptionPane.showMessageDialog(null, "4 WOWW (tombola)");
+                
+                nuovoTombola.setLocationRelativeTo(null);
+                nuovoTombola.tomb1.setText("Corvonero ha fatto tombola!");
+                nuovoTombola.setVisible(true);
+                
             }
         }
         
@@ -7172,13 +7188,10 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     }//GEN-LAST:event_aiutoMouseEntered
 
     private void aiutoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aiutoMouseClicked
-        JOptionPane.showMessageDialog(null,"Esposizione del gioco della tombola, tematizzato stile Harry Potter."
-                + "\nRealizzato dagli alunni 5L Indirizzo 'Informatica'."); 
-        /*
-        "Benvenuti alla magica tombola tematizzata stile Harry Potter! Preparatevi a immergervi in
-        un'esperienza unica e affascinante, dove incantesimi e magia si fondono con il classico divertimento della tombola. 
-        Pronti a scoprire i numeri magici e vincere fantastici premi?"
-        */
+
+        Info nuovoInfo = new Info(this,true);
+        nuovoInfo.setLocationRelativeTo(this);
+        nuovoInfo.setVisible(true);
     }//GEN-LAST:event_aiutoMouseClicked
 
     private void aiutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aiutoMouseExited
