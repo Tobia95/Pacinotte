@@ -13,6 +13,7 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     int p[]=new int[5];
     String s1;
     int giocatori;
+    
     JLabel []labels1 = new JLabel[91];
     JPanel []panels1 = new JPanel[91];
     JLabel []labels2 = new JLabel[61];
@@ -29,9 +30,10 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
    
     public Tombolainterfaccia() {
         initComponents();
-        
-        // INIZIALIZZAZIONE ARRAY tabellone
        
+        fullscreenoff.setVisible(false);
+        // INIZIALIZZAZIONE ARRAY tabellone
+        
         labels1[1]=E01;
         labels1[2]=E02;
         labels1[3]=E03;
@@ -205,18 +207,17 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     private void initComponents() {
 
         Schermata1 = new javax.swing.JPanel();
-        jPanel222 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel22 = new javax.swing.JPanel();
-        jLabel94 = new javax.swing.JLabel();
-        jPanel63 = new javax.swing.JPanel();
-        jLabel96 = new javax.swing.JLabel();
-        jLabel95 = new javax.swing.JLabel();
-        jLabel97 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        aiuto = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         fullscreenon = new javax.swing.JLabel();
         fullscreenoff = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         Schermata2 = new javax.swing.JPanel();
         Tabella = new RoundedPanel(20,new Color(204,0,0));
         P01 = new RoundedPanel(100,new Color(248,148,60));
@@ -584,74 +585,78 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
 
-        Schermata1.setBackground(new java.awt.Color(204, 0, 0));
+        Schermata1.setBackground(new java.awt.Color(204, 204, 255));
         Schermata1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
-        Schermata1.setPreferredSize(new java.awt.Dimension(1920, 800));
+        Schermata1.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        Schermata1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel222.setBackground(new java.awt.Color(204, 0, 0));
-        jPanel222.setLayout(new javax.swing.OverlayLayout(jPanel222));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0,0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/pngtree-string-of-christmas-lights-frame-png-image_6471884_1.png"))); // NOI18N
-        jPanel222.add(jLabel2);
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("High Tower Text", 1, 115)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/ombola-T.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 649, 186));
 
-        jLabel1.setFont(new java.awt.Font("High Tower Text", 0, 115)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("   TOMBOLA");
-        jPanel222.add(jLabel1);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/T-ombola.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 190, 200));
 
-        jPanel22.setBackground(new java.awt.Color(204, 0, 0));
+        Schermata1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 900, 220));
 
-        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/albero.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
-        jPanel22.setLayout(jPanel22Layout);
-        jPanel22Layout.setHorizontalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel94)
-                .addGap(32, 32, 32))
-        );
-        jPanel22Layout.setVerticalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 699, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanel63.setBackground(new java.awt.Color(204, 0, 0));
-
-        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/panariello.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
-        jPanel63.setLayout(jPanel63Layout);
-        jPanel63Layout.setHorizontalGroup(
-            jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel63Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
-                .addComponent(jLabel96, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
-        );
-        jPanel63Layout.setVerticalGroup(
-            jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel63Layout.createSequentialGroup()
-                .addGap(297, 297, 297)
-                .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/gioca.png"))); // NOI18N
-        jLabel95.addMouseListener(new java.awt.event.MouseAdapter() {
+        aiuto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/domanda.png"))); // NOI18N
+        aiuto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel95MouseClicked(evt);
+                aiutoMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel95MouseEntered(evt);
+                aiutoMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel95MouseExited(evt);
+                aiutoMouseExited(evt);
             }
         });
+        Schermata1.add(aiuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 40, 60));
+
+        jPanel2.setBackground(new java.awt.Color(112, 75, 42,175));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        fullscreenon.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        fullscreenon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/fullscreen1.png"))); // NOI18N
+        fullscreenon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fullscreenonMouseClicked(evt);
+            }
+        });
+        jPanel2.add(fullscreenon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1880, 10, 30, 40));
+
+        fullscreenoff.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        fullscreenoff.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/fullscreen2.png"))); // NOI18N
+        fullscreenoff.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fullscreenoffMouseClicked(evt);
+            }
+        });
+        jPanel2.add(fullscreenoff, new org.netbeans.lib.awtextra.AbsoluteConstraints(1880, 10, 30, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/user.png"))); // NOI18N
+        jLabel2.setText("1-4");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 70, 40));
+
+        Schermata1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 150));
+
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/gioca.png"))); // NOI18N
+        jLabel96.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel96MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel96MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel96MouseExited(evt);
+            }
+        });
+        Schermata1.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 770, -1, -1));
 
         jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/esci.png"))); // NOI18N
         jLabel97.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -665,70 +670,10 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 jLabel97MouseExited(evt);
             }
         });
+        Schermata1.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 770, 380, 150));
 
-        jPanel21.setBackground(new java.awt.Color(102, 0, 0));
-        jPanel21.setLayout(new java.awt.CardLayout());
-
-        fullscreenon.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        fullscreenon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/fullscreen1.png"))); // NOI18N
-        fullscreenon.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fullscreenonMouseClicked(evt);
-            }
-        });
-        jPanel21.add(fullscreenon, "card3");
-
-        fullscreenoff.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        fullscreenoff.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/fullscreen2.png"))); // NOI18N
-        fullscreenoff.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fullscreenoffMouseClicked(evt);
-            }
-        });
-        jPanel21.add(fullscreenoff, "card2");
-
-        javax.swing.GroupLayout Schermata1Layout = new javax.swing.GroupLayout(Schermata1);
-        Schermata1.setLayout(Schermata1Layout);
-        Schermata1Layout.setHorizontalGroup(
-            Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Schermata1Layout.createSequentialGroup()
-                .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Schermata1Layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jLabel95)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel97)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(Schermata1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel222, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(65, 65, 65)))
-                .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addComponent(jPanel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        Schermata1Layout.setVerticalGroup(
-            Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Schermata1Layout.createSequentialGroup()
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Schermata1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(Schermata1Layout.createSequentialGroup()
-                                .addComponent(jPanel222, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(Schermata1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel95)
-                                    .addComponent(jLabel97))
-                                .addGap(156, 156, 156))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Schermata1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/sfondo1.png"))); // NOI18N
+        Schermata1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1100));
 
         getContentPane().add(Schermata1, "card3");
 
@@ -6871,33 +6816,43 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
 
     private void jLabel99MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel99MouseEntered
         // TODO add your handling code here:
-        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/button clicked.png")));
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("button clicked.png")));
     }//GEN-LAST:event_jLabel99MouseEntered
 
     private void jLabel99MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel99MouseExited
         // TODO add your handling code here:
-        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/button.png")));
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("button.png")));
     }//GEN-LAST:event_jLabel99MouseExited
 
-    private void fullscreenonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fullscreenonMouseClicked
-        
-            gd.setFullScreenWindow(this);
-            fullscreenon.setVisible(false);
-            fullscreenoff.setVisible(true);
-        
-    }//GEN-LAST:event_fullscreenonMouseClicked
+    private void jLabel97MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseExited
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("esci.png")));
+    }//GEN-LAST:event_jLabel97MouseExited
 
-    private void fullscreenoffMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fullscreenoffMouseClicked
-            gd.setFullScreenWindow(null);
-            fullscreenoff.setVisible(false);
-            fullscreenon.setVisible(true);
-    }//GEN-LAST:event_fullscreenoffMouseClicked
+    private void jLabel97MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseEntered
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("esci_enter.png")));
+    }//GEN-LAST:event_jLabel97MouseEntered
 
-    private void jLabel95MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel95MouseClicked
+    private void jLabel97MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel97MouseClicked
+
+    private void jLabel96MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel96MouseExited
+        jLabel96.setOpaque(false);
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("gioca.png")));
+        jLabel96.setOpaque(false);
+    }//GEN-LAST:event_jLabel96MouseExited
+
+    private void jLabel96MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel96MouseEntered
+        jLabel96.setOpaque(false);
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("gioca_enter.png")));
+        jLabel96.setOpaque(false);
+    }//GEN-LAST:event_jLabel96MouseEntered
+
+    private void jLabel96MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel96MouseClicked
         NumGioc nuovoNumGioc = new NumGioc(this,true);
         nuovoNumGioc.setLocationRelativeTo(this);
         nuovoNumGioc.setVisible(true);
-        
+
         if(nuovoNumGioc.scelta!=1)
         {
             s1= nuovoNumGioc.num1.getText();
@@ -6909,330 +6864,321 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             Gioc2.setVisible(false);
             Gioc3.setVisible(false);
             Gioc4.setVisible(false);
-            
+
             GiocLabel1.setVisible(false);
             GiocLabel2.setVisible(false);
             GiocLabel3.setVisible(false);
-            GiocLabel4.setVisible(false);     
-           
-            
-            
+            GiocLabel4.setVisible(false);
+
             switch(giocatori){
                 case 1:
-                    Gioc1.setVisible(true);
-                    
-                    GiocLabel1.setVisible(true);
-                    break;
+                Gioc1.setVisible(true);
+
+                GiocLabel1.setVisible(true);
+                break;
                 case 2:
-                    Gioc1.setVisible(true);
-                    Gioc2.setVisible(true);
-                    
-                    GiocLabel1.setVisible(true);
-                    GiocLabel2.setVisible(true);
-                    break;
+                Gioc1.setVisible(true);
+                Gioc2.setVisible(true);
+
+                GiocLabel1.setVisible(true);
+                GiocLabel2.setVisible(true);
+                break;
                 case 3:
-                    Gioc1.setVisible(true);
-                    Gioc2.setVisible(true);
-                    Gioc3.setVisible(true);
-                    
-                    GiocLabel1.setVisible(true);
-                    GiocLabel2.setVisible(true);
-                    GiocLabel3.setVisible(true);
-                    break;
+                Gioc1.setVisible(true);
+                Gioc2.setVisible(true);
+                Gioc3.setVisible(true);
+
+                GiocLabel1.setVisible(true);
+                GiocLabel2.setVisible(true);
+                GiocLabel3.setVisible(true);
+                break;
                 case 4:
-                    Gioc1.setVisible(true);
-                    Gioc2.setVisible(true);
-                    Gioc3.setVisible(true);
-                    Gioc4.setVisible(true);
-                    
-                    GiocLabel1.setVisible(true);
-                    GiocLabel2.setVisible(true);
-                    GiocLabel3.setVisible(true);
-                    GiocLabel4.setVisible(true);
-                    break;
+                Gioc1.setVisible(true);
+                Gioc2.setVisible(true);
+                Gioc3.setVisible(true);
+                Gioc4.setVisible(true);
+
+                GiocLabel1.setVisible(true);
+                GiocLabel2.setVisible(true);
+                GiocLabel3.setVisible(true);
+                GiocLabel4.setVisible(true);
+                break;
             }
-            
-           if(giocatori >=1)
-           {   
-            arraynum[1] = random.nextInt(10) + 10;
-            arraynum[2] = random.nextInt(10) + 20;
-            arraynum[3] = random.nextInt(10) + 30;
-            arraynum[4] = random.nextInt(10) + 50;
-            arraynum[5] = random.nextInt(10) + 60;
-            
-            arraynum[6] = random.nextInt(9) + 1;
-            do{
-                arraynum[7] = random.nextInt(10) + 20;
-            }while(arraynum[2]==arraynum[7]);
-            
-            do{
-                arraynum[8] = random.nextInt(10) + 30;
-            }while(arraynum[3]==arraynum[8]);
-            
-            arraynum[9] = random.nextInt(10) + 40;
-            arraynum[10] = random.nextInt(10) + 70;
-            
-            
-            do{
-            arraynum[11] = random.nextInt(10) + 10;
-            }while(arraynum[2]==arraynum[11]);
-            
-            do{
-            arraynum[12] = random.nextInt(10) + 40;
-            }while(arraynum[9]==arraynum[12]);
-            
-            do{
-            arraynum[13] = random.nextInt(10) + 50;
-            }while(arraynum[4]==arraynum[13]);
-            
-            do{
-            arraynum[14] = random.nextInt(10) + 60;
-            }while(arraynum[5]==arraynum[14]);
-            arraynum[15] = random.nextInt(11) + 80;
-            
-            
-            
-            for(int i = 1; i <=15;i++) {
-            arraystrin[i] = Integer.toString(arraynum[i]);
-        }
-            
-            
-             Num1.setText(arraystrin[1]);
-             Num2.setText(arraystrin[2]);
-             Num3.setText(arraystrin[3]);
-             Num4.setText(arraystrin[4]);
-             Num5.setText(arraystrin[5]);
-             
-             Num6.setText(arraystrin[6]);
-             Num7.setText(arraystrin[7]);
-             Num8.setText(arraystrin[8]);
-             Num9.setText(arraystrin[9]);
-             Num10.setText(arraystrin[10]);
-             
-             Num11.setText(arraystrin[11]);
-             Num12.setText(arraystrin[12]);
-             Num13.setText(arraystrin[13]);
-             Num14.setText(arraystrin[14]);
-             Num15.setText(arraystrin[15]);
-           }
-           if(giocatori >=2)
-           {
-            arraynum[16] = random.nextInt(10) + 10;
-            arraynum[17] = random.nextInt(10) + 20;
-            arraynum[18] = random.nextInt(10) + 30;
-            arraynum[19] = random.nextInt(10) + 40;
-            arraynum[20] = random.nextInt(10) + 60;
-            
-            arraynum[21] = random.nextInt(9) + 1;
-            do{
-                arraynum[22] = random.nextInt(10) + 40;
-            }while(arraynum[19]==arraynum[22]);
-            
-            arraynum[23] = random.nextInt(10) + 50;
-            
-            do{
-            arraynum[24] = random.nextInt(10) + 60;
-            }while(arraynum[20]==arraynum[24]);
-            
-            arraynum[25] = random.nextInt(10) + 70;
-            
-            
-            do{
-            arraynum[26] = random.nextInt(10) + 10;
-            }while(arraynum[16]==arraynum[26]);
-            
-            do{
-            arraynum[27] = random.nextInt(10) + 30;
-            }while(arraynum[18]==arraynum[27]);
-            
-            do{
-            arraynum[28] = random.nextInt(10) + 50;
-            }while(arraynum[23]==arraynum[28]);
-            
-            do{
-            arraynum[29] = random.nextInt(10) + 70;
-            }while(arraynum[25]==arraynum[29]);
-            arraynum[30] = random.nextInt(11) + 80;
-            
-            
-            
-            for(int i = 16; i <=30;i++) {
-            arraystrin[i] = Integer.toString(arraynum[i]);
-        }
-            
-            
-             Num16.setText(arraystrin[16]);
-             Num17.setText(arraystrin[17]);
-             Num18.setText(arraystrin[18]);
-             Num19.setText(arraystrin[19]);
-             Num20.setText(arraystrin[20]);
-             
-             Num21.setText(arraystrin[21]);
-             Num22.setText(arraystrin[22]);
-             Num23.setText(arraystrin[23]);
-             Num24.setText(arraystrin[24]);
-             Num25.setText(arraystrin[25]);
-            
-             Num26.setText(arraystrin[26]);
-             Num27.setText(arraystrin[27]);
-             Num28.setText(arraystrin[28]);
-             Num29.setText(arraystrin[29]);
-             Num30.setText(arraystrin[30]); 
-               
-           }
-           if(giocatori >=3)
-           {
-            arraynum[31] = random.nextInt(9) + 1;
-            arraynum[32] = random.nextInt(10) + 10;
-            arraynum[33] = random.nextInt(10) + 30;
-            arraynum[34] = random.nextInt(10) + 50;
-            arraynum[35] = random.nextInt(10) + 60;
-            
-            arraynum[36] = random.nextInt(10) + 20;
-            do{
-                arraynum[37] = random.nextInt(10) + 30;
-            }while(arraynum[33]==arraynum[37]);
-            
-            arraynum[38] = random.nextInt(10) + 40;
-            
-            arraynum[39] = random.nextInt(10) + 70;
-            arraynum[40] = random.nextInt(11) + 80;
-            
-            
-            do{
-            arraynum[41] = random.nextInt(10) + 10;
-            }while(arraynum[32]==arraynum[41]);
-            
-            do{
-            arraynum[42] = random.nextInt(10) + 20;
-            }while(arraynum[36]==arraynum[42]);
-            
-            do{
-            arraynum[43] = random.nextInt(10) + 50;
-            }while(arraynum[34]==arraynum[43]);
-            
-            do{
-            arraynum[44] = random.nextInt(10) + 70;
-            }while(arraynum[39]==arraynum[44]);
-            do{
-            arraynum[45] = random.nextInt(11) + 80;
-            }while(arraynum[40]==arraynum[45]);
-            
-            
-            
-            for(int i = 31; i <=45;i++) {
-            arraystrin[i] = Integer.toString(arraynum[i]);
-        }
-            
-            
-             Num31.setText(arraystrin[31]);
-             Num32.setText(arraystrin[32]);
-             Num33.setText(arraystrin[33]);
-             Num34.setText(arraystrin[34]);
-             Num35.setText(arraystrin[35]);
-             
-             Num36.setText(arraystrin[36]);
-             Num37.setText(arraystrin[37]);
-             Num38.setText(arraystrin[38]);
-             Num39.setText(arraystrin[39]);
-             Num40.setText(arraystrin[40]);
-             
-             Num41.setText(arraystrin[41]);
-             Num42.setText(arraystrin[42]);
-             Num43.setText(arraystrin[43]);
-             Num44.setText(arraystrin[44]);
-             Num45.setText(arraystrin[45]);
-               
-               
-           }
-           if(giocatori>=4)
-           {
-             arraynum[46] = random.nextInt(9) + 1;
-            arraynum[47] = random.nextInt(10) + 10;
-            arraynum[48] = random.nextInt(10) + 30;
-            arraynum[49] = random.nextInt(10) + 60;
-            arraynum[50] = random.nextInt(10) + 70;
-            
-            do{
-            arraynum[51] = random.nextInt(10) + 10;
-            }while(arraynum[47]==arraynum[51]);
-            
-            arraynum[52] = random.nextInt(10) + 20;
-            arraynum[53] = random.nextInt(10) + 40;
-            arraynum[54] = random.nextInt(10) + 50;
-            do{
-            arraynum[55] = random.nextInt(10) + 70;
-            }while(arraynum[50]==arraynum[55]);
-            
-            
-            do{
-            arraynum[56] = random.nextInt(10) + 20;
-            }while(arraynum[52]==arraynum[56]);
-            
-            do{
-            arraynum[57] = random.nextInt(10) + 30;
-            }while(arraynum[48]==arraynum[57]);
-            
-            do{
-            arraynum[58] = random.nextInt(10) + 40;
-            }while(arraynum[53]==arraynum[58]);
-            
-            do{
-            arraynum[59] = random.nextInt(10) + 50;
-            }while(arraynum[54]==arraynum[59]);
-            arraynum[60] = random.nextInt(11) + 80;
-            
-            
-            
-            for(int i = 46; i <=60;i++) {
-            arraystrin[i] = Integer.toString(arraynum[i]);
-        }
-            
-            
-             Num46.setText(arraystrin[46]);
-             Num47.setText(arraystrin[47]);
-             Num48.setText(arraystrin[48]);
-             Num49.setText(arraystrin[49]);
-             Num50.setText(arraystrin[50]);
-             
-             Num51.setText(arraystrin[51]);
-             Num52.setText(arraystrin[52]);
-             Num53.setText(arraystrin[53]);
-             Num54.setText(arraystrin[54]);
-             Num55.setText(arraystrin[55]);
-             
-             Num56.setText(arraystrin[56]);
-             Num57.setText(arraystrin[57]);
-             Num58.setText(arraystrin[58]);
-             Num59.setText(arraystrin[59]);
-             Num60.setText(arraystrin[60]);  
-               
-               
-           }
-           
-          
-        }
-    }//GEN-LAST:event_jLabel95MouseClicked
 
-    private void jLabel95MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel95MouseEntered
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/gioca clicked.png")));
-    }//GEN-LAST:event_jLabel95MouseEntered
+            if(giocatori >=1)
+            {
+                arraynum[1] = random.nextInt(10) + 10;
+                arraynum[2] = random.nextInt(10) + 20;
+                arraynum[3] = random.nextInt(10) + 30;
+                arraynum[4] = random.nextInt(10) + 50;
+                arraynum[5] = random.nextInt(10) + 60;
 
-    private void jLabel95MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel95MouseExited
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/gioca.png")));
-    }//GEN-LAST:event_jLabel95MouseExited
+                arraynum[6] = random.nextInt(9) + 1;
+                do{
+                    arraynum[7] = random.nextInt(10) + 20;
+                }while(arraynum[2]==arraynum[7]);
 
-    private void jLabel97MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_jLabel97MouseClicked
+                do{
+                    arraynum[8] = random.nextInt(10) + 30;
+                }while(arraynum[3]==arraynum[8]);
 
-    private void jLabel97MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseEntered
-        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/esci clicked.png")));
-    }//GEN-LAST:event_jLabel97MouseEntered
+                arraynum[9] = random.nextInt(10) + 40;
+                arraynum[10] = random.nextInt(10) + 70;
 
-    private void jLabel97MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel97MouseExited
-        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/esci.png")));
-    }//GEN-LAST:event_jLabel97MouseExited
+                do{
+                    arraynum[11] = random.nextInt(10) + 10;
+                }while(arraynum[2]==arraynum[11]);
+
+                do{
+                    arraynum[12] = random.nextInt(10) + 40;
+                }while(arraynum[9]==arraynum[12]);
+
+                do{
+                    arraynum[13] = random.nextInt(10) + 50;
+                }while(arraynum[4]==arraynum[13]);
+
+                do{
+                    arraynum[14] = random.nextInt(10) + 60;
+                }while(arraynum[5]==arraynum[14]);
+                arraynum[15] = random.nextInt(11) + 80;
+
+                for(int i = 1; i <=15;i++) {
+                    arraystrin[i] = Integer.toString(arraynum[i]);
+                }
+
+                Num1.setText(arraystrin[1]);
+                Num2.setText(arraystrin[2]);
+                Num3.setText(arraystrin[3]);
+                Num4.setText(arraystrin[4]);
+                Num5.setText(arraystrin[5]);
+
+                Num6.setText(arraystrin[6]);
+                Num7.setText(arraystrin[7]);
+                Num8.setText(arraystrin[8]);
+                Num9.setText(arraystrin[9]);
+                Num10.setText(arraystrin[10]);
+
+                Num11.setText(arraystrin[11]);
+                Num12.setText(arraystrin[12]);
+                Num13.setText(arraystrin[13]);
+                Num14.setText(arraystrin[14]);
+                Num15.setText(arraystrin[15]);
+            }
+            if(giocatori >=2)
+            {
+                arraynum[16] = random.nextInt(10) + 10;
+                arraynum[17] = random.nextInt(10) + 20;
+                arraynum[18] = random.nextInt(10) + 30;
+                arraynum[19] = random.nextInt(10) + 40;
+                arraynum[20] = random.nextInt(10) + 60;
+
+                arraynum[21] = random.nextInt(9) + 1;
+                do{
+                    arraynum[22] = random.nextInt(10) + 40;
+                }while(arraynum[19]==arraynum[22]);
+
+                arraynum[23] = random.nextInt(10) + 50;
+
+                do{
+                    arraynum[24] = random.nextInt(10) + 60;
+                }while(arraynum[20]==arraynum[24]);
+
+                arraynum[25] = random.nextInt(10) + 70;
+
+                do{
+                    arraynum[26] = random.nextInt(10) + 10;
+                }while(arraynum[16]==arraynum[26]);
+
+                do{
+                    arraynum[27] = random.nextInt(10) + 30;
+                }while(arraynum[18]==arraynum[27]);
+
+                do{
+                    arraynum[28] = random.nextInt(10) + 50;
+                }while(arraynum[23]==arraynum[28]);
+
+                do{
+                    arraynum[29] = random.nextInt(10) + 70;
+                }while(arraynum[25]==arraynum[29]);
+                arraynum[30] = random.nextInt(11) + 80;
+
+                for(int i = 16; i <=30;i++) {
+                    arraystrin[i] = Integer.toString(arraynum[i]);
+                }
+
+                Num16.setText(arraystrin[16]);
+                Num17.setText(arraystrin[17]);
+                Num18.setText(arraystrin[18]);
+                Num19.setText(arraystrin[19]);
+                Num20.setText(arraystrin[20]);
+
+                Num21.setText(arraystrin[21]);
+                Num22.setText(arraystrin[22]);
+                Num23.setText(arraystrin[23]);
+                Num24.setText(arraystrin[24]);
+                Num25.setText(arraystrin[25]);
+
+                Num26.setText(arraystrin[26]);
+                Num27.setText(arraystrin[27]);
+                Num28.setText(arraystrin[28]);
+                Num29.setText(arraystrin[29]);
+                Num30.setText(arraystrin[30]);
+
+            }
+            if(giocatori >=3)
+            {
+                arraynum[31] = random.nextInt(9) + 1;
+                arraynum[32] = random.nextInt(10) + 10;
+                arraynum[33] = random.nextInt(10) + 30;
+                arraynum[34] = random.nextInt(10) + 50;
+                arraynum[35] = random.nextInt(10) + 60;
+
+                arraynum[36] = random.nextInt(10) + 20;
+                do{
+                    arraynum[37] = random.nextInt(10) + 30;
+                }while(arraynum[33]==arraynum[37]);
+
+                arraynum[38] = random.nextInt(10) + 40;
+
+                arraynum[39] = random.nextInt(10) + 70;
+                arraynum[40] = random.nextInt(11) + 80;
+
+                do{
+                    arraynum[41] = random.nextInt(10) + 10;
+                }while(arraynum[32]==arraynum[41]);
+
+                do{
+                    arraynum[42] = random.nextInt(10) + 20;
+                }while(arraynum[36]==arraynum[42]);
+
+                do{
+                    arraynum[43] = random.nextInt(10) + 50;
+                }while(arraynum[34]==arraynum[43]);
+
+                do{
+                    arraynum[44] = random.nextInt(10) + 70;
+                }while(arraynum[39]==arraynum[44]);
+                do{
+                    arraynum[45] = random.nextInt(11) + 80;
+                }while(arraynum[40]==arraynum[45]);
+
+                for(int i = 31; i <=45;i++) {
+                    arraystrin[i] = Integer.toString(arraynum[i]);
+                }
+
+                Num31.setText(arraystrin[31]);
+                Num32.setText(arraystrin[32]);
+                Num33.setText(arraystrin[33]);
+                Num34.setText(arraystrin[34]);
+                Num35.setText(arraystrin[35]);
+
+                Num36.setText(arraystrin[36]);
+                Num37.setText(arraystrin[37]);
+                Num38.setText(arraystrin[38]);
+                Num39.setText(arraystrin[39]);
+                Num40.setText(arraystrin[40]);
+
+                Num41.setText(arraystrin[41]);
+                Num42.setText(arraystrin[42]);
+                Num43.setText(arraystrin[43]);
+                Num44.setText(arraystrin[44]);
+                Num45.setText(arraystrin[45]);
+
+            }
+            if(giocatori>=4)
+            {
+                arraynum[46] = random.nextInt(9) + 1;
+                arraynum[47] = random.nextInt(10) + 10;
+                arraynum[48] = random.nextInt(10) + 30;
+                arraynum[49] = random.nextInt(10) + 60;
+                arraynum[50] = random.nextInt(10) + 70;
+
+                do{
+                    arraynum[51] = random.nextInt(10) + 10;
+                }while(arraynum[47]==arraynum[51]);
+
+                arraynum[52] = random.nextInt(10) + 20;
+                arraynum[53] = random.nextInt(10) + 40;
+                arraynum[54] = random.nextInt(10) + 50;
+                do{
+                    arraynum[55] = random.nextInt(10) + 70;
+                }while(arraynum[50]==arraynum[55]);
+
+                do{
+                    arraynum[56] = random.nextInt(10) + 20;
+                }while(arraynum[52]==arraynum[56]);
+
+                do{
+                    arraynum[57] = random.nextInt(10) + 30;
+                }while(arraynum[48]==arraynum[57]);
+
+                do{
+                    arraynum[58] = random.nextInt(10) + 40;
+                }while(arraynum[53]==arraynum[58]);
+
+                do{
+                    arraynum[59] = random.nextInt(10) + 50;
+                }while(arraynum[54]==arraynum[59]);
+                arraynum[60] = random.nextInt(11) + 80;
+
+                for(int i = 46; i <=60;i++) {
+                    arraystrin[i] = Integer.toString(arraynum[i]);
+                }
+
+                Num46.setText(arraystrin[46]);
+                Num47.setText(arraystrin[47]);
+                Num48.setText(arraystrin[48]);
+                Num49.setText(arraystrin[49]);
+                Num50.setText(arraystrin[50]);
+
+                Num51.setText(arraystrin[51]);
+                Num52.setText(arraystrin[52]);
+                Num53.setText(arraystrin[53]);
+                Num54.setText(arraystrin[54]);
+                Num55.setText(arraystrin[55]);
+
+                Num56.setText(arraystrin[56]);
+                Num57.setText(arraystrin[57]);
+                Num58.setText(arraystrin[58]);
+                Num59.setText(arraystrin[59]);
+                Num60.setText(arraystrin[60]);
+
+            }
+
+        }
+    }//GEN-LAST:event_jLabel96MouseClicked
+
+    private void fullscreenonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fullscreenonMouseClicked
+
+        gd.setFullScreenWindow(this);
+        fullscreenon.setVisible(false);
+        fullscreenoff.setVisible(true);
+
+    }//GEN-LAST:event_fullscreenonMouseClicked
+
+    private void fullscreenoffMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fullscreenoffMouseClicked
+        gd.setFullScreenWindow(null);
+        fullscreenoff.setVisible(false);
+        fullscreenon.setVisible(true);
+    }//GEN-LAST:event_fullscreenoffMouseClicked
+
+    private void aiutoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aiutoMouseEntered
+        aiuto.setIcon(new javax.swing.ImageIcon(getClass().getResource("domanda_entered.png")));
+    }//GEN-LAST:event_aiutoMouseEntered
+
+    private void aiutoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aiutoMouseClicked
+        JOptionPane.showMessageDialog(null,"Esposizione del gioco della tombola, tematizzato stile Harry Potter."
+                + "\nRealizzato dagli alunni 5L Indirizzo 'Informatica'."); 
+        /*
+        "Benvenuti alla magica tombola tematizzata stile Harry Potter! Preparatevi a immergervi in
+        un'esperienza unica e affascinante, dove incantesimi e magia si fondono con il classico divertimento della tombola. 
+        Pronti a scoprire i numeri magici e vincere fantastici premi?"
+        */
+    }//GEN-LAST:event_aiutoMouseClicked
+
+    private void aiutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aiutoMouseExited
+        aiuto.setIcon(new javax.swing.ImageIcon(getClass().getResource("domanda.png")));
+    }//GEN-LAST:event_aiutoMouseExited
 
     /**
      * @param args the command line arguments
@@ -7534,17 +7480,19 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     private javax.swing.JPanel Schermata1;
     private javax.swing.JPanel Schermata2;
     private javax.swing.JPanel Tabella;
+    private javax.swing.JLabel aiuto;
     private javax.swing.JLabel fullscreenoff;
     private javax.swing.JLabel fullscreenon;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel105;
     private javax.swing.JPanel jPanel111;
     private javax.swing.JPanel jPanel112;
@@ -7631,6 +7579,7 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel197;
     private javax.swing.JPanel jPanel198;
     private javax.swing.JPanel jPanel199;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel200;
     private javax.swing.JPanel jPanel201;
     private javax.swing.JPanel jPanel202;
@@ -7641,7 +7590,6 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel207;
     private javax.swing.JPanel jPanel208;
     private javax.swing.JPanel jPanel209;
-    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel210;
     private javax.swing.JPanel jPanel211;
     private javax.swing.JPanel jPanel212;
@@ -7652,12 +7600,9 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel217;
     private javax.swing.JPanel jPanel218;
     private javax.swing.JPanel jPanel219;
-    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel220;
     private javax.swing.JPanel jPanel221;
-    private javax.swing.JPanel jPanel222;
     private javax.swing.JPanel jPanel223;
-    private javax.swing.JPanel jPanel63;
     private javax.swing.JLabel premi;
     // End of variables declaration//GEN-END:variables
 
