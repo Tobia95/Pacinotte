@@ -6452,7 +6452,9 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
         }while(v[k]==1);
         v[k] = 1;
         
-        labels1[k].setForeground(Color.red);
+        
+        labels1[k].setText("");
+        labels1[k].setIcon(new javax.swing.ImageIcon(getClass().getResource("boccino.png")));
         
         
         int lim1=1, lim2=5, c=0;
@@ -6467,7 +6469,6 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 if(v[j]==1)
                 {
                     c++;
-                    System.out.print(" "+v[j]+""+ k+""+ c);
                 }
                 
             }
@@ -6560,7 +6561,8 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 if(v[arraynum[j]]==1)
                 {
                     c++;
-                    labels2[j].setForeground(Color.red);
+                    labels2[j].setText("");
+                    labels2[j].setIcon(new javax.swing.ImageIcon(getClass().getResource("grifondoro.png")));
                 }
             }
                 
@@ -6612,7 +6614,8 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 if(v[arraynum[j]]==1)
                 {
                     c++;
-                    labels2[j].setForeground(Color.red);
+                    labels2[j].setText("");
+                    labels2[j].setIcon(new javax.swing.ImageIcon(getClass().getResource("serpeverde.png")));
                 }
             }
                 
@@ -6664,7 +6667,8 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 if(v[arraynum[j]]==1)
                 {
                     c++;
-                    labels2[j].setForeground(Color.red);
+                    labels2[j].setText("");
+                    labels2[j].setIcon(new javax.swing.ImageIcon(getClass().getResource("tassorosso.png")));
                 }
             }
                 
@@ -6716,7 +6720,8 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
                 if(v[arraynum[j]]==1)
                 {
                     c++;
-                    labels2[j].setForeground(Color.red);
+                    labels2[j].setText("");
+                    labels2[j].setIcon(new javax.swing.ImageIcon(getClass().getResource("corvonero.png")));
                 }
             }
                 
