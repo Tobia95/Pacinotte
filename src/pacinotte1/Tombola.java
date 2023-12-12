@@ -35,7 +35,7 @@ public class Tombola extends javax.swing.JDialog {
 
         tomb1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Tobia\\Desktop\\severo.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pacinotte1/harry1.gif"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -6778,8 +6778,8 @@ public class Tombolainterfaccia extends javax.swing.JFrame {
             if(c==15)
             {
                 nuovoTombola.setLocationRelativeTo(null);
-                nuovoTombola.setVisible(true);
                 nuovoTombola.tomb1.setText("Grifindoro ha fatto tombola!");
+                nuovoTombola.setVisible(true);
             }
         }
         

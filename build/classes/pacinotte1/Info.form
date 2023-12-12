@@ -160,7 +160,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Tobia\Desktop\Opera_Snapshot_2023-12-12_230417_cdn.discordapp.com-removebg-preview.png"/>
+              <Image iconType="3" name="/pacinotte1/pacinottilogo.png"/>
             </Property>
           </Properties>
         </Component>
